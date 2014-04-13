@@ -1,0 +1,48 @@
+@import 'nib'
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300')
+
+global-reset()
+
+body, html
+    width 100%
+    height 100%
+    font-family 'Open Sans Condensed', sans-serif
+    -webkit-font-smoothing:antialiased
+
+*
+    margin 0
+    padding 0
+
+.tudo
+    margin 0 0 0 100px
+    position relative
+    top 50%
+    -webkit-transition translateY(-50%)
+    -moz-transform translateY(-50%)
+    -ms-transform translateY(-50%)
+    -o-transform translateY(-50%)
+    transform translateY(-55%)
+
+a, p
+    color #999
+    text-decoration none
+    font-size 25px
+
+h1
+    font-size 40px
+    font-weight 400
+    margin 0 0 10px
+
+p > *:hover
+    -webkit-transition color 500ms ease-out
+    -moz-transition color 500ms ease-out
+    -o-transition color 500ms ease-out 
+    transition color 500ms ease-out
+    color #008fd5
+
+@media only screen and (max-width: 320px)
+    body
+        padding 30px
+        .tudo
+            margin-left 0

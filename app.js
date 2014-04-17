@@ -26,7 +26,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function (req, res) {
   res.render('index',
-  { title : 'André Abadesso' }
+  { title : 'André Abadesso' } //0106
   )
 })
 app.listen(3000)
